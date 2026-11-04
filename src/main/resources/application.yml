@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: master-data-api
+  datasource:
+    url: "jdbc:mysql://localhost:3306/hlu_assignment"
+    username: ""
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+  flyway:
+    enabled: true
+server:
+  error:
+    include-message: never
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        same-site: strict
+      timeout: 30m
+app:
+  bootstrap:
+    username: ""
+    password: ""
+  pagination:
+    max-size: 100
+  branch-deletion-policy: REJECT_IF_STORES_EXIST

@@ -1,0 +1,7 @@
+/target/
+/planning/
+/.idea/
+/.vscode/
+*.iml
+*.log
+.env*
